@@ -13,9 +13,9 @@
       shell = {
         forAllSystems = f: nixpkgs.lib.genAttrs [
           "x86_64-linux" # 64-bit Intel/AMD Linux
-          # "aarch64-linux" # 64-bit ARM Linux (not tested)
-          # "x86_64-darwin" # 64-bit Intel macOS (not tested)
-          # "aarch64-darwin" # 64-bit ARM macOS (not tested)
+          "aarch64-linux" # 64-bit ARM Linux (not tested)
+          "x86_64-darwin" # 64-bit Intel macOS (not tested)
+          "aarch64-darwin" # 64-bit ARM macOS (not tested)
         ]
           (system: f { pkgs = import nixpkgs { inherit system; }; });
       };
