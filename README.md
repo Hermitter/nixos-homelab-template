@@ -3,10 +3,9 @@
 A template for organizing multiple machines with secrets, shared configurations, and automatic rollback on erroneous deployments.
 
 # Dependencies
-> Aside from Nix with Flakes, everything else is for quality of life.
 - [Nix with Flakes](https://zero-to-nix.com/start/install)
-- [direnv](https://github.com/direnv/direnv)
-- [VS Code](https://code.visualstudio.com/)
+- [direnv (optional)](https://github.com/direnv/direnv)
+- [VS Code (optional)](https://code.visualstudio.com/)
 
 # Setup
 For a deployment host&user example, you can view the `hosts/foobar` and `users/foobaz` folders.
