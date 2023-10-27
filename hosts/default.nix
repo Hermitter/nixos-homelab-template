@@ -11,8 +11,8 @@ in
   foobar = {
     # REPLACE with target machine's IP address
     address = "192.168.122.5";
-    # Defaulting to the stable channel
-    channel = "nixpkgs";
+    # Use the stable channel.
+    channel = "nixpkgs"; # "nixpkgs-unstable" is also available
     # REPLACE with target machine's archetecture
     platform = "x86_64-linux";
     # REPLACE with public ssh key from target machine's /etc/ssh folder
