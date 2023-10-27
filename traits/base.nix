@@ -1,6 +1,9 @@
 # Reminder: This configuration is automatically applied to each host
-{ config, pkgs, lib, ... }:
+{ config, pkgs, lib, host, ... }:
 {
+  # Set host name to be the same as in hosts/default.nix
+  hostName = host.name;
+
   # Enable nix flakes
   nix.settings = {
     experimental-features = "nix-command flakes";
