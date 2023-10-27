@@ -9,7 +9,7 @@ A template for organizing multiple machines with secrets, shared configurations,
 - [VS Code](https://code.visualstudio.com/)
 
 # Setup
-For a deployment host&user example, you can view the `host/foobar` and `users/foobaz` folders.
+For a deployment host&user example, you can view the `hosts/foobar` and `users/foobaz` folders.
 
 ## Secret Management [(agenix)](https://github.com/ryantm/agenix)
 As a convention, secrets are added to a host's folder under the `secrets` folder. A `secrets.nix` should be there to declare your secrets and which SSH keys can decrypt them.
