@@ -1,0 +1,7 @@
+# The latest stored morph build
+.gcroots
+# Flakes direnv
+.direnv
+# Nix outputs
+result*
+isoImage*
