@@ -7,7 +7,7 @@ in
   # <host>.path -> path to host's folder
   # <host>.vars -> vars.nix file in host's folder
 {
-  # Host names are used in both the network hostname (traits/base.nix) and the folder for "hosts/<host>/configuration.nix"
+  # Host names are used to find "hosts/<host>/configuration.nix"
   foobar = {
     # REPLACE with target machine's IP address
     address = "192.168.122.5";
