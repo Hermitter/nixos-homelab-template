@@ -2,7 +2,7 @@
 { config, pkgs, lib, host, ... }:
 {
   # Set host name to be the same as in hosts/default.nix
-  hostName = host.name;
+  networking.hostName = host.name;
 
   # Enable nix flakes
   nix.settings = {
