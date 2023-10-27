@@ -29,7 +29,7 @@ in
 
       # The following modules are required and already imported by default:
       ## Configs applied to each target marchine
-      ## - trais.base
+      ## - traits.base
       ## The user deploy-rs uses to deploy the configuration 
       ## - users.deploy
     ];
