@@ -6,6 +6,6 @@ update:
 deploy MACHINE:
     deploy '.#{{MACHINE}}'
 
-# Passes the path to nixpkgs-fmt
+# Calls the Nix formatter
 fmt *args:
     @nixpkgs-fmt  {{args}}
