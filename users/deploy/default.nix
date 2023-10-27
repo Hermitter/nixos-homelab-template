@@ -1,3 +1,4 @@
+# Reminder: This configuration is automatically applied to each host
 { config, pkgs, lib, globals, ... }:
 let
   username = "deploy";

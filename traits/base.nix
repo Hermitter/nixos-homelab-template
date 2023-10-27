@@ -1,4 +1,4 @@
-# Reminder: These configurations are automatically applied to each host
+# Reminder: This configuration is automatically applied to each host
 { config, pkgs, lib, ... }:
 {
   # Enable nix flakes
