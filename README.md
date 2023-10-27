@@ -1,6 +1,6 @@
 # NixOS Homelab Template
 
-A personal template I use to manage some of the servers I use day to day.
+A template for organizing multiple machines with secrets, shared configurations, and automatic rollback on erroneous deployments.
 
 # Dependencies
 > Aside from Nix with Flakes, everything else is for quality of life.
