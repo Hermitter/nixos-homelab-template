@@ -10,6 +10,11 @@ A template for organizing multiple machines with secrets, shared configurations,
 # Setup
 For a deployment host&user example, you can view the `hosts/foobar` and `users/foobaz` folders.
 
+If direnv is not used, run the following command to load the remaining dependencies in a nix shell.
+```bash
+nix develop
+```
+
 ## Secret Management [(agenix)](https://github.com/ryantm/agenix)
 As a convention, secrets are added to a host's folder under the `secrets` folder. A `secrets.nix` should be there to declare your secrets and which SSH keys can decrypt them.
 
@@ -52,8 +57,5 @@ Register a new host in `hosts/default.nix` and a folder that shares the host's n
 
 Deploy your configuration!
 ```
-# If direnv is not used
-nix develop
-
 just deploy <host_name>
 ```
