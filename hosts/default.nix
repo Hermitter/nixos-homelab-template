@@ -13,7 +13,7 @@ in
     address = "192.168.122.5";
     # Use the stable channel.
     channel = "nixpkgs"; # "nixpkgs-unstable" is also available
-    # REPLACE with target machine's archetecture
+    # REPLACE with target machine's architecture
     platform = "x86_64-linux";
     # REPLACE with public ssh key from target machine's /etc/ssh folder
     pubkey = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIokUQI3L+GCtrWZGUbQTu6UTEY2odFcH0tH97Xdvr/N root@nixos";
@@ -24,12 +24,11 @@ in
     # NixOS modules to include in target machine configuration
     modules = [
       # REPLACE with the modules you want
+      traits.base
       traits.lxd
       users.foobaz
 
       # The following modules are required and already imported by default:
-      ## Configs applied to each target marchine
-      ## - traits.base
       ## The user deploy-rs uses to deploy the configuration 
       ## - users.deploy
     ];

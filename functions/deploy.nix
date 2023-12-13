@@ -51,7 +51,6 @@ nixpkgs.lib.attrsets.foldlAttrs
               attrs;
             # Required modules
             modules = with self.nixosModules; [
-              traits.base
               # Deployment user
               users.deploy
               # Grab the host's configuration
