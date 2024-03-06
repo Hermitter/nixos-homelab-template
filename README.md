@@ -1,6 +1,6 @@
 # NixOS Homelab Template
 
-A template for organizing multiple machines with secrets, shared configurations, and automatic rollback on erroneous deployments.
+A nix template that's similar to what I use for organizing multiple machines. This covers encrypted secrets, shared configurations, and automatic rollback on erroneous deployments.
 
 # Dependencies
 - [Nix with Flakes](https://zero-to-nix.com/start/install)
